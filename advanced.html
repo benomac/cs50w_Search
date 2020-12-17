@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Advanced</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <body>
+
+        
+    <div id="wrapper">
+        <div id="top-bar">
+            <div class="links_box">
+                <a class="links" href="index.html">Search</a>
+            </div>
+            <a href="https://google.com/search"><img id="ad_google" src="/Users/benomac/search/gooel_logo_small.png"></a>
+            
+        </div>
+        <div id="title2">
+        <h5>Advanced Search</h5>
+        
+        </div>
+        
+
+        <form action="https://www.google.co.uk/search" name="f">
+           
+            
+            <div id="container">
+
+                <div class="outer-box">
+                    <p style="font-size: 100%;" class="label">Find pages with...</p>
+                    <div style="width: 650px;"  class="box"><input hidden class="ad_in" type="text"></div> 
+                    <div style=" font-size: 90%; color: #777777;" class="desc">To do this in the search box.
+                    </div>
+                </div>
+
+                <div class="outer-box">
+                    <p class="label">all these words:</p>
+                    <div class="box"><input autofocus class="ad_in" type="text" name="as_q"></div> 
+                    <div class="desc">Type the important words: <span class="desc_span">tri-colour rat terrier</span>
+                    </div>
+                </div>
+            
+
+            
+                <div class="outer-box">
+                    <p class="label">this exact word or phrase:</p>
+                    <div class="box"><input class="ad_in" type="text" name="as_epq"></div> 
+                    <div class="desc">Put exact words in quotes: <span class="desc_span">"rat terrier"</span></div>
+                </div>
+           
+
+            
+                <div class="outer-box">
+                    <p class="label">any of these words:</p>
+                    <div class="box"><input class="ad_in" type="text" name="as_oq"></div> 
+                    <div class="desc">Type OR between all the words you want: <span class="desc_span">miniature OR standard</span></div>
+                </div>
+            
+
+            
+                <div class="outer-box">
+                    <p class="label">none of these words:</p>
+                    <div class="box"><input class="ad_in" type="text" name="as_eq"></div> 
+                    <div class="desc">Put a minus sign just before words that you don't want: <span class="desc_span">-rodent, -"Jack Russell"</span></div>
+                </div>
+            </div>
+
+        <div style="margin-left: 300px;">
+            <button style="margin: 30px;" type="submit" class="btn btn-primary">Advanced search</button>
+        </div>
+        </form>
+    </div>    
+    </body>
+</html>
+
