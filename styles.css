@@ -25,6 +25,7 @@ body {
     text-decoration: none;
     color: #000000;
     font-size: 13px;
+    padding-right: 10px;
 }
 
 .links:hover {
@@ -37,6 +38,7 @@ body {
     padding:10px;
     border: 1px solid #a0a3a8;
     border-radius: 25px;
+    font-size: 16px;
 }
 
 #mag_glass {
@@ -63,8 +65,12 @@ input[type="submit"] {
     text-align: center;
     cursor: pointer;
     user-select: none;
+    
 }
 
+input[type="submit"]:hover {
+    box-shadow: 0 0 0 1px #a0a3a8;
+}
 .button {
     padding-top: 18px;
     top: 53px;
@@ -73,7 +79,7 @@ input[type="submit"] {
 
 .search_box:hover, .search_box:focus {
     outline:none;
-    box-shadow: 0 4px 4px 0 #a0a3a8, 0 6px 20px 0 #a0a3a8;
+    box-shadow: 0 0 0 0 #a0a3a8, 2px 2px 2px 2px #a0a3a8;
     outline: none; 
 }
 
@@ -98,17 +104,6 @@ input[type="submit"] {
     height: 50%;
 }
 
-.label {
-    text-align: left;
-    display: inline-block;
-    min-width: 167px;
-    width: 16%;
-    
-    color: #222;
-    font-size: 90%;
-    line-height: 16px;
-    vertical-align: middle;
-}
 
 .label2 {
     text-align: right;
@@ -135,15 +130,28 @@ input[type="submit"] {
     text-align: left;
     display: inline-block;
     min-width: 167px;
-    width: 30%;
-    height: 42px;
+    width: 300px;
+    vertical-align: middle;
     color: #555;
     font-size: 13px;
     line-height: 16px;
+
+   
+}
+
+.label {
+    text-align: left;
+    display: inline-block;
+    min-width: 167px;
+    width: 100%;
+    color: #222;
+    font-size: 90%;
+    line-height: 16px;
     vertical-align: middle;
-    
+  
     
 }
+
 
 .desc_span {
     color: #666;
@@ -152,20 +160,13 @@ input[type="submit"] {
     white-space: pre;
 }
 
-.box {
-    display: inline-block;
-    min-width: 167px;
-    min-height: 41px;
-    vertical-align: middle;
-    width: 650px;
-    padding-right: 30px;
-    
+.container {
+    width: 1%;
 }
 
-.container {
-    width: 100%;
-    clear: both;
-}
+
+
+
 
 #title2 {
     font-weight: lighter;
@@ -181,6 +182,9 @@ input[type="submit"] {
 
 
 
+td {
+    padding: 5px;
+}
 .ad_in {
     border-radius: 1px;
     border: 1px solid #d9d9d9;
@@ -189,10 +193,14 @@ input[type="submit"] {
     height: 30px;
     width:100%;
     padding: 1px 8px;
+   
 }
 
 
-.outer-box {
+.tab_in {
     margin-left: 40px;
+    width: 60%;
+    min-width: 300px;
+  
 }
 

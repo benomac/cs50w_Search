@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <title>Advanced</title>
         <!-- CSS only -->
@@ -14,7 +15,7 @@
             <div class="links_box">
                 <a class="links" href="index.html">Search</a>
             </div>
-            <a href="https://google.com/search"><img id="ad_google" src="/Users/benomac/search/gooel_logo_small.png"></a>
+            <a href="index.html"><img id="ad_google" src="/Users/benomac/search/gooel_logo_small.png"></a>
             
         </div>
         <div id="title2">
@@ -23,51 +24,41 @@
         </div>
         
 
-        <form action="https://www.google.co.uk/search" name="f">
+        <form style="width: fit-content; padding-left: 50px;" action="https://www.google.co.uk/search" name="f">
            
             
-            <div id="container">
-
-                <div class="outer-box">
-                    <p style="font-size: 100%;" class="label">Find pages with...</p>
-                    <div style="width: 650px;"  class="box"><input hidden class="ad_in" type="text"></div> 
-                    <div style=" font-size: 90%; color: #777777;" class="desc">To do this in the search box.
-                    </div>
-                </div>
-
-                <div class="outer-box">
-                    <p class="label">all these words:</p>
-                    <div class="box"><input autofocus class="ad_in" type="text" name="as_q"></div> 
-                    <div class="desc">Type the important words: <span class="desc_span">tri-colour rat terrier</span>
-                    </div>
-                </div>
+            <table class="container">
             
+                <tr>
+                    <th class="label" style="color: #333333; padding-bottom: 20px; font-size: 16px;">Find pages with...</th>
+                    <th></th>
+                    <th style="color: #777777; padding-bottom: 20px; font-size: 14px; padding-right: 100px;">To do this in the search box.</th>
+                </tr>
+                
+                <tr>
+                    <td class="label">all these words:</td>
+                    <td class="tab_in"><input autofocus class="ad_in" type="text" name="as_q"></td>
+                    <td  class="desc">Type the important words: <span class="desc_span">tri-colour rat terrier</span></td>
+                </tr>
+                <tr>
+                    <td class="label">this exact word or phrase:
+                    </td>
+                    <td class="tab_in"><input autofocus class="ad_in" type="text" name="as_epq"></td>
+                    <td class="desc">Type the important words: <span class="desc_span">"rat terrier"</span></td>
+                </tr>
+                <tr>
+                    <td class="label">none of these words:</td>
+                    <td class="tab_in"><input autofocus class="ad_in" type="text" name="as_oq"></td>
+                    <td class="desc">Type the important words: <span class="desc_span">miniature OR standard</span></td>
+                </tr>
+                <tr>
+                    <td class="label">all these words:</td>
+                    <td class="tab_in"><input autofocus class="ad_in" type="text" name="as_eq"></td>
+                    <td class="desc">Type the important words: <span class="desc_span"></span>-rodent, -"Jack Russell"</span></td>
+                </tr>
+            </table>
 
-            
-                <div class="outer-box">
-                    <p class="label">this exact word or phrase:</p>
-                    <div class="box"><input class="ad_in" type="text" name="as_epq"></div> 
-                    <div class="desc">Put exact words in quotes: <span class="desc_span">"rat terrier"</span></div>
-                </div>
-           
-
-            
-                <div class="outer-box">
-                    <p class="label">any of these words:</p>
-                    <div class="box"><input class="ad_in" type="text" name="as_oq"></div> 
-                    <div class="desc">Type OR between all the words you want: <span class="desc_span">miniature OR standard</span></div>
-                </div>
-            
-
-            
-                <div class="outer-box">
-                    <p class="label">none of these words:</p>
-                    <div class="box"><input class="ad_in" type="text" name="as_eq"></div> 
-                    <div class="desc">Put a minus sign just before words that you don't want: <span class="desc_span">-rodent, -"Jack Russell"</span></div>
-                </div>
-            </div>
-
-        <div style="margin-left: 300px;">
+        <div style="margin-left: 400px;">
             <button style="margin: 30px;" type="submit" class="btn btn-primary">Advanced search</button>
         </div>
         </form>
